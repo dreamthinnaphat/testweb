@@ -6,4 +6,4 @@ def hello():
     return "Hello from Thinnaphat Server"
 
 if __name__ == "__main__":
-    server.run(host='localhost', port=80)
+    server.run(host='0.0.0.0', port=80)
