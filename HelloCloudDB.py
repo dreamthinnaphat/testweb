@@ -13,7 +13,7 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
 #Staff Class/Model
-class Staffs(db.Model):
+class staffs(db.Model):
     id = db.Column(db.String(13), primary_key=True, unique=True)
     name = db.Column(db.String(50))
     email = db.Column(db.String(25))
@@ -48,4 +48,4 @@ def get():
 
 # Run Server
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=80)
+    app.run(host='0.0.0.0', port=80)
