@@ -13,7 +13,7 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
 #Staff Class/Model
-class staffs(db.Model):
+class Staffs(db.Model):
     id = db.Column(db.String(13), primary_key=True, unique=True)
     name = db.Column(db.String(50))
     email = db.Column(db.String(25))
@@ -44,7 +44,7 @@ def get_staffs():
 # Web Root Hello
 @app.route('/', methods=['GET'])
 def get():
-    return jsonify({'ms': 'Hello Cloud DB1'})
+    return jsonify({'ms': 'Hello Cloud DB'})
 
 # Run Server
 if __name__ == "__main__":
