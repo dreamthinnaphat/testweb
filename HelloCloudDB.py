@@ -44,7 +44,7 @@ def get_staffs():
 # Web Root Hello
 @app.route('/', methods=['GET'])
 def get():
-    return jsonify({'ms': 'Hello Cloud DB'})
+    return jsonify({'ms': 'Hello Cloud DB-Get'})
 
 # Run Server
 if __name__ == "__main__":
